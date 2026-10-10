@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzBCMEIwQyIvPjxkZWZzPjxwYXRoIGlkPSJ3aSIgZD0iTTMwMC4yMiA0NTYuNjRRMjI4LjA2IDQ1Ni42NCAxODguNjggNDI0LjA4UTE0OS4zIDM5MS41MiAxNDkuMyAzMjkuNDhWMTQ4LjY0SDI0Ni41NDAwMDAwMDAwMDAwMlYzMjguMTZRMjQ2LjU0MDAwMDAwMDAwMDAyIDM1My42OCAyNjAuMTgwMDAwMDAwMDAwMDYgMzY4Ljg2UTI3My44MjAwMDAwMDAwMDAwNSAzODQuMDQgMjk5Ljc4IDM4NC4wNFEzMjUuNzQgMzg0LjA0IDMzOS42IDM2OC42NFEzNTMuNDYwMDAwMDAwMDAwMDQgMzUzLjI0IDM1My40NjAwMDAwMDAwMDAwNCAzMjguMTZWMTQ4LjY0SDQ1MC43VjMyOS40OFE0NTAuNyAzOTEuNTIgNDExLjUzOTk5OTk5OTk5OTk2IDQyNC4wOFEzNzIuMzggNDU2LjY0IDMwMC4yMiA0NTYuNjRaIi8+CjxjbGlwUGF0aCBpZD0iY2lfMCI+PHJlY3QgeD0iNTYuNzQwMDAwMDAwMDAwMDEiIHk9IjEyOC42NCIgd2lkdGg9IjQ4Ni41MiIgaGVpZ2h0PSIzNS4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV8xIj48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMTYyLjA0IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjE1LjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzIiPjxyZWN0IHg9IjU2Ljc0MDAwMDAwMDAwMDAxIiB5PSIxNzYuMDQiIHdpZHRoPSI0ODYuNTIiIGhlaWdodD0iMTUuMiIvPjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0iY2lfMyI+PHJlY3QgeD0iNTYuNzQwMDAwMDAwMDAwMDEiIHk9IjE5MC4wNCIgd2lkdGg9IjQ4Ni41MiIgaGVpZ2h0PSI3LjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzQiPjxyZWN0IHg9IjU2Ljc0MDAwMDAwMDAwMDAxIiB5PSIxOTYuMDQiIHdpZHRoPSI0ODYuNTIiIGhlaWdodD0iNi4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV81Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMjAxLjA0IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjE1LjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzYiPjxyZWN0IHg9IjU2Ljc0MDAwMDAwMDAwMDAxIiB5PSIyMTUuMDQiIHdpZHRoPSI0ODYuNTIiIGhlaWdodD0iNi4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV83Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMjIwLjA0IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjUuMiIvPjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0iY2lfOCI+PHJlY3QgeD0iNTYuNzQwMDAwMDAwMDAwMDEiIHk9IjIyNC4wNCIgd2lkdGg9IjQ4Ni41MiIgaGVpZ2h0PSIxNS4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV85Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMjM4LjA0IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjkuMiIvPjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0iY2lfMTAiPjxyZWN0IHg9IjU2Ljc0MDAwMDAwMDAwMDAxIiB5PSIyNDYuMDQiIHdpZHRoPSI0ODYuNTIiIGhlaWdodD0iMTAuMiIvPjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0iY2lfMTEiPjxyZWN0IHg9IjU2Ljc0MDAwMDAwMDAwMDAxIiB5PSIyNTUuMDQiIHdpZHRoPSI0ODYuNTIiIGhlaWdodD0iNC4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV8xMiI+PHJlY3QgeD0iNTYuNzQwMDAwMDAwMDAwMDEiIHk9IjI1OC4wMzk5OTk5OTk5OTk5NiIgd2lkdGg9IjQ4Ni41MiIgaGVpZ2h0PSIzMi4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV8xMyI+PHJlY3QgeD0iNTYuNzQwMDAwMDAwMDAwMDEiIHk9IjI4OS4wMzk5OTk5OTk5OTk5NiIgd2lkdGg9IjQ4Ni41MiIgaGVpZ2h0PSI0LjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzE0Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMjkyLjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjguMiIvPjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0iY2lfMTUiPjxyZWN0IHg9IjU2Ljc0MDAwMDAwMDAwMDAxIiB5PSIyOTkuMDM5OTk5OTk5OTk5OTYiIHdpZHRoPSI0ODYuNTIiIGhlaWdodD0iNC4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV8xNiI+PHJlY3QgeD0iNTYuNzQwMDAwMDAwMDAwMDEiIHk9IjMwMi4wMzk5OTk5OTk5OTk5NiIgd2lkdGg9IjQ4Ni41MiIgaGVpZ2h0PSI3LjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzE3Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMzA4LjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjI0LjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzE4Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMzMxLjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjExLjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzE5Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMzQxLjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjIxLjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzIwIj48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMzYxLjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjcuMiIvPjwvY2xpcFBhdGg+CjxjbGlwUGF0aCBpZD0iY2lfMjEiPjxyZWN0IHg9IjU2Ljc0MDAwMDAwMDAwMDAxIiB5PSIzNjcuMDM5OTk5OTk5OTk5OTYiIHdpZHRoPSI0ODYuNTIiIGhlaWdodD0iOS4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV8yMiI+PHJlY3QgeD0iNTYuNzQwMDAwMDAwMDAwMDEiIHk9IjM3NS4wMzk5OTk5OTk5OTk5NiIgd2lkdGg9IjQ4Ni41MiIgaGVpZ2h0PSIxNS4yIi8+PC9jbGlwUGF0aD4KPGNsaXBQYXRoIGlkPSJjaV8yMyI+PHJlY3QgeD0iNTYuNzQwMDAwMDAwMDAwMDEiIHk9IjM4OS4wMzk5OTk5OTk5OTk5NiIgd2lkdGg9IjQ4Ni41MiIgaGVpZ2h0PSI0LjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzI0Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iMzkyLjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjI3LjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzI1Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iNDE4LjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjEzLjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzI2Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iNDMwLjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjEzLjIiLz48L2NsaXBQYXRoPgo8Y2xpcFBhdGggaWQ9ImNpXzI3Ij48cmVjdCB4PSI1Ni43NDAwMDAwMDAwMDAwMSIgeT0iNDQyLjAzOTk5OTk5OTk5OTk2IiB3aWR0aD0iNDg2LjUyIiBoZWlnaHQ9IjI5LjkyMDAwMDAwMDAwMDAyNyIvPjwvY2xpcFBhdGg+CjwvZGVmcz4KPHVzZSBocmVmPSIjd2kiIHg9IjIiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8wKSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iMCIgZmlsbD0iI0ZGRkZGRiIgY2xpcC1wYXRoPSJ1cmwoI2NpXzEpIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSIyIiBmaWxsPSIjRkZGRkZGIiBjbGlwLXBhdGg9InVybCgjY2lfMikiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjIiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8zKSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iNCIgZmlsbD0iIzRGQjhGMCIgY2xpcC1wYXRoPSJ1cmwoI2NpXzQpIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSItMyIgZmlsbD0iI0ZGRkZGRiIgY2xpcC1wYXRoPSJ1cmwoI2NpXzQpIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSIwIiBmaWxsPSIjRkZGRkZGIiBjbGlwLXBhdGg9InVybCgjY2lfNSkiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjgiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV82KSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iMTUiIGZpbGw9IiM0RkI4RjAiIGNsaXAtcGF0aD0idXJsKCNjaV83KSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iOCIgZmlsbD0iI0ZGRkZGRiIgY2xpcC1wYXRoPSJ1cmwoI2NpXzcpIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSIwIiBmaWxsPSIjRkZGRkZGIiBjbGlwLXBhdGg9InVybCgjY2lfOCkiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjUiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV85KSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iMCIgZmlsbD0iI0ZGRkZGRiIgY2xpcC1wYXRoPSJ1cmwoI2NpXzEwKSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iNCIgZmlsbD0iIzRGQjhGMCIgY2xpcC1wYXRoPSJ1cmwoI2NpXzExKSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iLTMiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8xMSkiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjAiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8xMikiLz4KPHVzZSBocmVmPSIjd2kiIHg9Ii0zIiBmaWxsPSIjRkZGRkZGIiBjbGlwLXBhdGg9InVybCgjY2lfMTMpIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSIwIiBmaWxsPSIjRkZGRkZGIiBjbGlwLXBhdGg9InVybCgjY2lfMTQpIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSItOCIgZmlsbD0iI0ZGRkZGRiIgY2xpcC1wYXRoPSJ1cmwoI2NpXzE1KSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iLTgiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8xNikiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjAiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8xNykiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjkiIGZpbGw9IiM0RkI4RjAiIGNsaXAtcGF0aD0idXJsKCNjaV8xOCkiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjIiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8xOCkiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjAiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8xOSkiLz4KPHVzZSBocmVmPSIjd2kiIHg9Ii0yIiBmaWxsPSIjRkZGRkZGIiBjbGlwLXBhdGg9InVybCgjY2lfMjApIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSItMSIgZmlsbD0iIzRGQjhGMCIgY2xpcC1wYXRoPSJ1cmwoI2NpXzIxKSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iLTgiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8yMSkiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjAiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8yMikiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjUiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8yMykiLz4KPHVzZSBocmVmPSIjd2kiIHg9IjAiIGZpbGw9IiNGRkZGRkYiIGNsaXAtcGF0aD0idXJsKCNjaV8yNCkiLz4KPHVzZSBocmVmPSIjd2kiIHg9Ii01IiBmaWxsPSIjRkZGRkZGIiBjbGlwLXBhdGg9InVybCgjY2lfMjUpIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSIwIiBmaWxsPSIjRkZGRkZGIiBjbGlwLXBhdGg9InVybCgjY2lfMjYpIi8+Cjx1c2UgaHJlZj0iI3dpIiB4PSIxMCIgZmlsbD0iIzRGQjhGMCIgY2xpcC1wYXRoPSJ1cmwoI2NpXzI3KSIvPgo8dXNlIGhyZWY9IiN3aSIgeD0iMyIgZmlsbD0iI0ZGRkZGRiIgY2xpcC1wYXRoPSJ1cmwoI2NpXzI3KSIvPgo8cmVjdCB4PSIzMDEuNiIgeT0iNDExLjAiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyIiBmaWxsPSIjRkZGRkZGIi8+CjxyZWN0IHg9IjM2MC43IiB5PSIzNjguMiIgd2lkdGg9IjM0IiBoZWlnaHQ9IjIiIGZpbGw9IiM0RkI4RjAiLz4KPHJlY3QgeD0iMjU1LjgiIHk9IjQxNS43IiB3aWR0aD0iMTQiIGhlaWdodD0iMiIgZmlsbD0iIzRGQjhGMCIvPgo8cmVjdCB4PSIxNjcuNSIgeT0iMjIwLjgiIHdpZHRoPSIzNCIgaGVpZ2h0PSIzIiBmaWxsPSIjRkZGRkZGIi8+CjxyZWN0IHg9IjEzNi40IiB5PSI0MjkuOSIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIiIGZpbGw9IiNGRkZGRkYiLz48L3N2Zz4=">
+<meta property="og:title" content="Uredo Media">
+<meta property="og:description" content="We film, edit and run video ads for restaurants, malls and boutiques.">
+<meta property="og:type" content="website">
+<title>Uredo Media</title>
+<meta name="description" content="Uredo Media films, edits and runs video ads for restaurants, malls and boutiques in Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: a camera viewfinder hero, then a plain white page with generous space, black type and sky blue used only where the eye should land */
+:root{
+  --bg:#FFFFFF;
+  --ink:#0B0B0C;
+  --muted:#4A5560;
+  --line:#E3EAF0;
+  --soft:#F3F8FC;
+  --sky:#4FB8F0;
+  --sky-ink:#0B0B0C;
+  --panel:#0B0B0C;
+  --panel-ink:#FFFFFF;
+  --display:"Archivo Black","Arial Black","Helvetica Neue",Arial,sans-serif;
+  --body:"Poppins","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B0B0C;--ink:#F5F7F9;--muted:#A9B4BE;--line:#22282E;--soft:#13171B;
+    --sky:#5CC2F5;--sky-ink:#0B0B0C;--panel:#161A1E;--panel-ink:#FFFFFF;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B0B0C;--ink:#F5F7F9;--muted:#A9B4BE;--line:#22282E;--soft:#13171B;
+  --sky:#5CC2F5;--sky-ink:#0B0B0C;--panel:#161A1E;--panel-ink:#FFFFFF;color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
+@media (max-width:480px){.wrap{padding-inline:16px}}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.01em;text-wrap:balance;margin:0}
+p{margin:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* nav */
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:block;width:150px;color:var(--ink)}
+.brand svg{display:block;width:100%;height:auto}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+@media (max-width:760px){.nav ul{display:none}}
+
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--body);font-weight:600;font-size:15px;text-decoration:none;border-radius:999px;padding:13px 22px;border:2px solid var(--ink);transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--ink);color:var(--bg)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-sm{padding:9px 16px;font-size:14px}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* hero */
+.hero{padding-block:72px 96px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(38px,5.6vw,66px)}
+.hl{background:linear-gradient(transparent 62%,var(--sky) 62%,var(--sky) 92%,transparent 92%);padding-inline:2px}
+.hero .lede{margin-top:24px;font-size:18px;color:var(--muted);max-width:34em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero .meta{margin-top:28px;font-size:14px;color:var(--muted)}
+.hero .meta strong{color:var(--ink);font-weight:600}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:48px}.hero{padding-block:48px 72px}}
+
+/* viewfinder */
+.vf{position:relative;justify-self:center;width:min(100%,340px);aspect-ratio:9/16;max-width:100%;background:var(--panel);color:var(--panel-ink);border-radius:22px;overflow:hidden;font-family:var(--body)}
+.vf .scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 4px)}
+.vf .glow{position:absolute;inset:auto -30% -20% -30%;height:60%;background:radial-gradient(closest-side,rgba(79,184,240,.38),transparent)}
+.vf .corner{position:absolute;width:26px;height:26px;border-color:rgba(255,255,255,.85);border-style:solid;border-width:0}
+.vf .tl{top:18px;left:18px;border-top-width:2px;border-left-width:2px}
+.vf .tr{top:18px;right:18px;border-top-width:2px;border-right-width:2px}
+.vf .bl{bottom:18px;left:18px;border-bottom-width:2px;border-left-width:2px}
+.vf .br{bottom:18px;right:18px;border-bottom-width:2px;border-right-width:2px}
+.vf .top{position:absolute;top:30px;left:52px;right:52px;display:flex;justify-content:space-between;font-size:12px;font-weight:600;letter-spacing:.08em;font-variant-numeric:tabular-nums}
+.rec{display:inline-flex;align-items:center;gap:7px}
+.rec i{width:9px;height:9px;border-radius:50%;background:#FF3B3B;animation:blink 1.2s steps(2,start) infinite}
+@keyframes blink{to{visibility:hidden}}
+.vf .focus{position:absolute;left:50%;top:44%;width:64px;height:64px;transform:translate(-50%,-50%);border:1.5px solid var(--sky)}
+.vf .focus::after{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;background:var(--sky);border-radius:50%}
+.vf .cap{position:absolute;left:28px;right:28px;bottom:58px}
+.vf .cap .tag{display:inline-block;background:var(--sky);color:var(--sky-ink);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.vf .cap p{margin-top:12px;font-size:15px;line-height:1.5}
+.vf .bar{position:absolute;left:28px;right:28px;bottom:36px;height:3px;background:rgba(255,255,255,.18);border-radius:3px;overflow:hidden}
+.vf .bar span{display:block;height:100%;width:38%;background:var(--sky);animation:play 15s linear infinite}
+@keyframes play{from{width:0}to{width:100%}}
+.vf .ratio{position:absolute;bottom:22px;right:52px;font-size:10px;letter-spacing:.14em;opacity:.6}
+
+/* sections */
+section{padding-block:96px}
+@media (max-width:600px){section{padding-block:72px}}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-size:clamp(30px,4vw,46px);margin-top:12px}
+.sec-head p{color:var(--muted);max-width:32em}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr;gap:16px;margin-bottom:40px}}
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink)}
+.svc{padding:32px 32px 8px 0;min-width:0}
+.svc + .svc{padding-left:32px;border-left:1px solid var(--line)}
+.svc .ico{width:44px;height:44px;border-radius:12px;background:var(--soft);display:grid;place-items:center;margin-bottom:22px}
+.svc .ico svg{width:22px;height:22px;stroke:var(--ink)}
+.svc h3{font-size:24px}
+.svc p{margin-top:12px;color:var(--muted)}
+.svc ul{margin:16px 0 0;padding:0;list-style:none;font-size:14px;display:grid;gap:8px}
+.svc li{display:flex;gap:10px;align-items:baseline}
+.svc li::before{content:"";flex:none;width:8px;height:8px;border-radius:2px;background:var(--sky);transform:translateY(-1px)}
+@media (max-width:860px){.services{grid-template-columns:1fr}.svc,.svc + .svc{padding:28px 0;border-left:0;border-bottom:1px solid var(--line)}}
+
+.for{background:var(--soft)}
+.for .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.place{background:var(--bg);border-radius:18px;padding:32px;min-width:0}
+.place h3{font-size:22px}
+.place p{margin-top:10px;color:var(--muted);font-size:15px}
+@media (max-width:860px){.for .grid{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;counter-reset:s}
+.step{min-width:0}
+.step .n{font-family:var(--display);font-size:15px;display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;border:2px solid var(--ink)}
+.step h3{font-size:22px;margin-top:20px}
+.step p{margin-top:10px;color:var(--muted)}
+@media (max-width:860px){.steps{grid-template-columns:1fr;gap:32px}}
+
+/* results */
+.results{background:var(--panel);color:var(--panel-ink)}
+.results .eyebrow{color:var(--sky)}
+.results .sec-head p{color:rgba(255,255,255,.7)}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.case{border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:24px;min-width:0}
+.case .who{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.case h3{font-size:26px}
+.case .kind{font-size:13px;color:rgba(255,255,255,.6)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.stat b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(28px,3.4vw,38px);line-height:1.1;color:var(--sky);font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:6px;font-size:13px;line-height:1.5;color:rgba(255,255,255,.72)}
+.case blockquote{margin:0;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);font-size:17px;line-height:1.65}
+.case cite{display:block;margin-top:14px;font-style:normal;font-size:14px;color:rgba(255,255,255,.65)}
+.case cite strong{color:#fff;font-weight:600}
+.case .note{font-size:13px;color:rgba(255,255,255,.55);margin-top:auto}
+@media (max-width:860px){.cases{grid-template-columns:1fr}.case{padding:28px}}
+
+/* contact */
+.contact .box{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;border:2px solid var(--ink);border-radius:28px;padding:56px}
+.contact h2{font-size:clamp(30px,4vw,46px)}
+.contact .box > div > p{margin-top:16px;color:var(--muted);max-width:30em}
+.lines{display:grid;gap:14px}
+.line{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 20px;border-radius:16px;background:var(--soft);min-width:0}
+.line small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.line a,.line .v{font-weight:600;font-size:18px;text-decoration:none;word-break:break-all;font-variant-numeric:tabular-nums}
+.copy{flex:none;font:600 13px var(--body);background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer}
+.copy:hover{border-color:var(--ink)}
+.contact .btn{margin-top:28px}
+@media (max-width:860px){.contact .box{grid-template-columns:1fr;padding:32px 24px;gap:32px}}
+
+.work{padding-block:0 96px}
+.work .box{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px;background:var(--soft);border-radius:28px;padding:56px}
+.work .box > div{flex:1 1 420px;min-width:0}
+.work h2{font-size:clamp(28px,3.6vw,40px)}
+.work p:not(.eyebrow){margin-top:14px;color:var(--muted);max-width:34em}
+.btn-sky{background:var(--sky);color:var(--sky-ink);border-color:var(--sky)}
+@media (max-width:600px){.work{padding-block:0 72px}.work .box{padding:32px 24px}}
+footer{padding-block:48px 56px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;font-size:14px;color:var(--muted)}
+footer .brand{width:120px}
+footer em{font-style:italic}
+</style>
+<style>body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Uredo Media home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 322" role="img" aria-label="Uredo Media">
+<defs><path id="wh" d="M153.4 210.0Q120.6 210.0 102.69999999999999 195.2Q84.8 180.39999999999998 84.8 152.2V70.0H129.0V151.6Q129.0 163.2 135.2 170.1Q141.4 177.0 153.2 177.0Q165.0 177.0 171.3 170.0Q177.60000000000002 163.0 177.60000000000002 151.6V70.0H221.8V152.2Q221.8 180.39999999999998 204.0 195.2Q186.2 210.0 153.4 210.0ZM359.40000000000003 150.0 390.0 207.6H340.40000000000003L316.0 157.39999999999998H299.6V207.6H255.40000000000003V70.0H339.6Q354.40000000000003 70.0 364.90000000000003 75.69999999999999Q375.40000000000003 81.39999999999999 380.70000000000005 91.1Q386.0 100.79999999999998 386.0 112.19999999999999Q386.0 124.79999999999998 379.20000000000005 135.0Q372.40000000000003 145.2 359.40000000000003 150.0ZM328.6 101.39999999999999H299.6V126.79999999999998H328.6Q333.8 126.79999999999998 337.4 123.1Q341.0 119.39999999999999 341.0 113.99999999999999Q341.0 108.6 337.4 105.0Q333.8 101.39999999999999 328.6 101.39999999999999ZM415.00000000000006 70.0H534.0V102.99999999999999H459.20000000000005V121.99999999999999H523.2V153.6H459.20000000000005V174.6H535.4000000000001V207.6H415.00000000000006ZM695.2 138.8Q695.2 207.6 623.0 207.6H563.4V70.0H623.0Q695.2 70.0 695.2 138.8ZM607.6 174.6H622.2Q650.0 174.6 650.0 144.79999999999998V132.8Q650.0 102.99999999999999 622.2 102.99999999999999H607.6ZM865.8000000000001 138.8Q865.8000000000001 173.6 846.4000000000001 191.8Q827.0 210.0 791.4000000000001 210.0Q755.8000000000001 210.0 736.5 191.89999999999998Q717.2 173.79999999999998 717.2 138.8Q717.2 103.79999999999998 736.5 85.69999999999999Q755.8000000000001 67.6 791.4000000000001 67.6Q827.0 67.6 846.4000000000001 85.79999999999998Q865.8000000000001 103.99999999999999 865.8000000000001 138.8ZM762.4000000000001 132.39999999999998V145.2Q762.4000000000001 159.79999999999998 769.8000000000001 168.39999999999998Q777.2 177.0 791.4000000000001 177.0Q805.6 177.0 813.1 168.39999999999998Q820.6 159.79999999999998 820.6 145.2V132.39999999999998Q820.6 117.79999999999998 813.1 109.19999999999999Q805.6 100.6 791.4000000000001 100.6Q777.2 100.6 769.8000000000001 109.19999999999999Q762.4000000000001 117.79999999999998 762.4000000000001 132.39999999999998Z"/>
+<clipPath id="ch_0"><rect x="10" y="50.0" width="924.8" height="72.2"/></clipPath>
+<clipPath id="ch_1"><rect x="10" y="120.4" width="924.8" height="7.2"/></clipPath>
+<clipPath id="ch_2"><rect x="10" y="126.4" width="924.8" height="36.2"/></clipPath>
+<clipPath id="ch_3"><rect x="10" y="161.4" width="924.8" height="7.2"/></clipPath>
+<clipPath id="ch_4"><rect x="10" y="167.4" width="924.8" height="5.2"/></clipPath>
+<clipPath id="ch_5"><rect x="10" y="171.4" width="924.8" height="13.2"/></clipPath>
+<clipPath id="ch_6"><rect x="10" y="183.4" width="924.8" height="8.2"/></clipPath>
+<clipPath id="ch_7"><rect x="10" y="190.4" width="924.8" height="7.2"/></clipPath>
+<clipPath id="ch_8"><rect x="10" y="196.4" width="924.8" height="4.2"/></clipPath>
+<clipPath id="ch_9"><rect x="10" y="199.4" width="924.8" height="28.799999999999994"/></clipPath>
+</defs>
+<use href="#wh" x="0" fill="currentColor" clip-path="url(#ch_0)"/>
+<use href="#wh" x="-3" fill="currentColor" clip-path="url(#ch_1)"/>
+<use href="#wh" x="0" fill="currentColor" clip-path="url(#ch_2)"/>
+<use href="#wh" x="5" fill="currentColor" clip-path="url(#ch_3)"/>
+<use href="#wh" x="0" fill="currentColor" clip-path="url(#ch_4)"/>
+<use href="#wh" x="5" fill="currentColor" clip-path="url(#ch_5)"/>
+<use href="#wh" x="0" fill="currentColor" clip-path="url(#ch_6)"/>
+<use href="#wh" x="-5" fill="currentColor" clip-path="url(#ch_7)"/>
+<use href="#wh" x="0" fill="currentColor" clip-path="url(#ch_8)"/>
+<use href="#wh" x="5" fill="currentColor" clip-path="url(#ch_9)"/>
+<rect x="155.5" y="153.8" width="22" height="2" fill="var(--sky)"/>
+<rect x="375.4" y="90.9" width="34" height="3" fill="var(--sky)"/>
+<rect x="466.5" y="116.8" width="34" height="3" fill="currentColor"/>
+<rect x="413.4" y="185.6" width="34" height="3" fill="var(--sky)"/>
+<rect x="276.1" y="159.0" width="22" height="3" fill="currentColor"/>
+<path d="M419.206 241.86800000000002V265.6H414.44599999999997V250.16400000000002L408.08799999999997 265.6H404.484L398.092 250.16400000000002V265.6H393.332V241.86800000000002H398.738L406.286 259.514L413.834 241.86800000000002ZM442.658 245.71000000000004V251.66000000000003H450.648V255.43400000000003H442.658V261.72400000000005H451.668V265.6H437.898V241.83400000000003H451.668V245.71000000000004ZM490.79400000000004 253.76800000000003Q490.79400000000004 257.338 489.24700000000007 260.00700000000006Q487.70000000000005 262.67600000000004 484.86100000000005 264.13800000000003Q482.02200000000005 265.6 478.28200000000004 265.6H469.98600000000005V241.86800000000002H478.28200000000004Q482.02200000000005 241.86800000000002 484.86100000000005 243.33000000000004Q487.70000000000005 244.79200000000003 489.24700000000007 247.49500000000003Q490.79400000000004 250.19800000000004 490.79400000000004 253.76800000000003ZM485.932 253.76800000000003Q485.932 250.062 483.89200000000005 247.971Q481.85200000000003 245.88000000000002 478.112 245.88000000000002H474.74600000000004V261.55400000000003H478.112Q481.85200000000003 261.55400000000003 483.89200000000005 259.514Q485.932 257.47400000000005 485.932 253.76800000000003ZM513.124 241.86800000000002V265.6H508.36400000000003V241.86800000000002ZM546.368 261.07800000000003H536.916L535.352 265.6H530.354L538.888 241.83400000000003H544.4300000000001L552.964 265.6H547.932ZM545.076 257.27000000000004 541.642 247.342 538.2080000000001 257.27000000000004Z" fill="currentColor"/>
+</svg></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Our work</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary btn-sm" href="https://wa.me/2348115687177" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>WhatsApp us</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Video filming, editing and ads</p>
+        <h1 style="margin-top:16px">We make videos that bring <span class="hl">customers</span> through your door.</h1>
+        <p class="lede">We film your restaurant, mall or boutique, edit it into short videos people actually watch, and run the ads on every platform so more people come to buy from you.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="https://wa.me/2348115687177" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Message us on WhatsApp</a>
+          <a class="btn btn-ghost" href="#results">See our results</a>
+        </div>
+        <p class="meta">WhatsApp or call <strong>0811 568 7177</strong></p>
+      </div>
+
+      <div class="vf" aria-hidden="true">
+        <div class="glow"></div><div class="scan"></div>
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <div class="top"><span class="rec"><i></i>REC</span><span id="tc">00:00:05:12</span></div>
+        <div class="focus"></div>
+        <div class="cap">
+          <span class="tag">Now filming</span>
+          <p>Your best dishes, your new arrivals and your busiest hours, shot and cut for Instagram, TikTok and Facebook.</p>
+        </div>
+        <div class="bar"><span></span></div>
+        <span class="ratio">9:16</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">What we do</p><h2>Filming, editing and ads in one place.</h2></div>
+        <p>You don't need a separate videographer, editor and ads person, we handle all three so the video you get is made to sell from the start.</p>
+      </div>
+      <div class="services">
+        <div class="svc">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></svg></div>
+          <h3>Filming</h3>
+          <p>We come to your place and film what makes people want to visit, your food, your products, your space and your people.</p>
+          <ul><li>On location shoots</li><li>Product and menu videos</li><li>Short videos for reels and stories</li></ul>
+        </div>
+        <div class="svc">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div>
+          <h3>Editing</h3>
+          <p>We cut the footage into short, clear videos with music, captions and your offer, sized for each platform.</p>
+          <ul><li>Reels, TikToks and stories</li><li>Captions and text on screen</li><li>Versions for every platform</li></ul>
+        </div>
+        <div class="svc">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></div>
+          <h3>Running ads</h3>
+          <p>We put your videos in front of people near you who are ready to buy, on Instagram, Facebook, TikTok and other platforms.</p>
+          <ul><li>Ads on all platforms</li><li>Targeting people around you</li><li>Reports on what your money did</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="for">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Who we work with</p><h2>Restaurants, malls and boutiques.</h2></div>
+        <p>Our work is for businesses that live on foot traffic and orders, where a good video can fill tables, aisles and delivery bags.</p>
+      </div>
+      <div class="grid">
+        <div class="place"><h3>Restaurants</h3><p>Food videos that make people hungry, so they come in or order on Chowdeck and other delivery apps.</p></div>
+        <div class="place"><h3>Malls</h3><p>Videos that show shoppers what is new, what is on offer and why the trip is worth it this weekend.</p></div>
+        <div class="place"><h3>Boutiques</h3><p>Try ons, new arrivals and styling videos that turn people scrolling into people messaging to buy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">How it works</p><h2>How we work with you.</h2></div>
+        <p>We keep it simple so you can focus on running your business while we bring the customers.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><h3>We talk and plan</h3><p>Send us a message on WhatsApp, we learn what you sell and who you want to reach, then plan the shoot with you.</p></div>
+        <div class="step"><span class="n">2</span><h3>We film and edit</h3><p>We come to your place, film on the day, and send you finished videos to approve before anything goes live.</p></div>
+        <div class="step"><span class="n">3</span><h3>We run the ads</h3><p>Your videos go out as ads on every platform, and we keep you updated with the numbers so you can see the results.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="wrap">
+      <div class="box">
+        <div>
+          <p class="eyebrow">Our work</p>
+          <h2 style="margin-top:12px">See the videos we have made for our clients.</h2>
+          <p>Our portfolio is in one folder so you can watch the full videos, and we are adding new ones as our upcoming projects go live.</p>
+        </div>
+        <a class="btn btn-sky" href="https://drive.google.com/drive/folders/1RmuuBe_5XOcvnve9oWntz4YfsO_-wNQQ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Watch our videos</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" class="results">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Results</p><h2>What happened when they worked with us.</h2></div>
+        <p>Real numbers from real clients, taken from their own accounts and ad dashboards.</p>
+      </div>
+      <div class="cases">
+        <article class="case">
+          <div class="who"><h3>October Kitchen</h3><span class="kind">Restaurant</span></div>
+          <div class="stats">
+            <div class="stat"><b>₦117,360</b><span>in Chowdeck wallet inflow after the first month of working with us</span></div>
+            <div class="stat"><b>Live</b><span>on Chowdeck, after having no Chowdeck presence before working with us</span></div>
+          </div>
+          <blockquote>“Uredo completely transformed our business. We went from zero web traffic and no Chowdeck presence to massive order growth after their work. Highly recommended!”
+            <cite><strong>Mr. Monday Okwoli</strong>, MD, Tucano Power, October Kitchen</cite>
+          </blockquote>
+        </article>
+        <article class="case">
+          <div class="who"><h3>BlackBox Technology</h3><span class="kind">Technology company</span></div>
+          <div class="stats">
+            <div class="stat"><b>17,557</b><span>ad impressions on Meta and LinkedIn in the first week</span></div>
+            <div class="stat"><b>527</b><span>landing page views in week one, against a target of 120</span></div>
+            <div class="stat"><b>12,025</b><span>Facebook page views in the first week</span></div>
+            <div class="stat"><b>+47.6%</b><span>Instagram followers, grown from 63 to 93 with content alone</span></div>
+          </div>
+          <p class="note">Meta ads spend for the first week was ₦10,617, about ₦20 per landing page view.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="box">
+        <div>
+          <p class="eyebrow">Get started</p>
+          <h2 style="margin-top:12px">Tell us about your business.</h2>
+          <p>Send us a message on WhatsApp with your business name and what you sell, and we will reply with how we can help and what it will cost.</p>
+          <a class="btn btn-primary" href="https://wa.me/2348115687177?text=Hello%20Uredo%2C%20I%20would%20like%20to%20know%20more%20about%20your%20video%20and%20ads%20services." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Message us on WhatsApp</a>
+        </div>
+        <div class="lines">
+          <div class="line"><div><small>WhatsApp and calls</small><span class="v" id="ph">0811 568 7177</span></div><button class="copy" type="button" id="copyPhone" data-copy="08115687177">Copy</button></div>
+          <div class="line"><div><small>Email</small><span class="v" id="em">hello@uredo.com.ng</span></div><button class="copy" type="button" id="copyEmail" data-copy="hello@uredo.com.ng">Copy</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 945 322" role="img" aria-label="Uredo Media">
+<defs><path id="wf" d="M153.4 210.0Q120.6 210.0 102.69999999999999 195.2Q84.8 180.39999999999998 84.8 152.2V70.0H129.0V151.6Q129.0 163.2 135.2 170.1Q141.4 177.0 153.2 177.0Q165.0 177.0 171.3 170.0Q177.60000000000002 163.0 177.60000000000002 151.6V70.0H221.8V152.2Q221.8 180.39999999999998 204.0 195.2Q186.2 210.0 153.4 210.0ZM359.40000000000003 150.0 390.0 207.6H340.40000000000003L316.0 157.39999999999998H299.6V207.6H255.40000000000003V70.0H339.6Q354.40000000000003 70.0 364.90000000000003 75.69999999999999Q375.40000000000003 81.39999999999999 380.70000000000005 91.1Q386.0 100.79999999999998 386.0 112.19999999999999Q386.0 124.79999999999998 379.20000000000005 135.0Q372.40000000000003 145.2 359.40000000000003 150.0ZM328.6 101.39999999999999H299.6V126.79999999999998H328.6Q333.8 126.79999999999998 337.4 123.1Q341.0 119.39999999999999 341.0 113.99999999999999Q341.0 108.6 337.4 105.0Q333.8 101.39999999999999 328.6 101.39999999999999ZM415.00000000000006 70.0H534.0V102.99999999999999H459.20000000000005V121.99999999999999H523.2V153.6H459.20000000000005V174.6H535.4000000000001V207.6H415.00000000000006ZM695.2 138.8Q695.2 207.6 623.0 207.6H563.4V70.0H623.0Q695.2 70.0 695.2 138.8ZM607.6 174.6H622.2Q650.0 174.6 650.0 144.79999999999998V132.8Q650.0 102.99999999999999 622.2 102.99999999999999H607.6ZM865.8000000000001 138.8Q865.8000000000001 173.6 846.4000000000001 191.8Q827.0 210.0 791.4000000000001 210.0Q755.8000000000001 210.0 736.5 191.89999999999998Q717.2 173.79999999999998 717.2 138.8Q717.2 103.79999999999998 736.5 85.69999999999999Q755.8000000000001 67.6 791.4000000000001 67.6Q827.0 67.6 846.4000000000001 85.79999999999998Q865.8000000000001 103.99999999999999 865.8000000000001 138.8ZM762.4000000000001 132.39999999999998V145.2Q762.4000000000001 159.79999999999998 769.8000000000001 168.39999999999998Q777.2 177.0 791.4000000000001 177.0Q805.6 177.0 813.1 168.39999999999998Q820.6 159.79999999999998 820.6 145.2V132.39999999999998Q820.6 117.79999999999998 813.1 109.19999999999999Q805.6 100.6 791.4000000000001 100.6Q777.2 100.6 769.8000000000001 109.19999999999999Q762.4000000000001 117.79999999999998 762.4000000000001 132.39999999999998Z"/>
+<clipPath id="cf_0"><rect x="10" y="50.0" width="924.8" height="72.2"/></clipPath>
+<clipPath id="cf_1"><rect x="10" y="120.4" width="924.8" height="7.2"/></clipPath>
+<clipPath id="cf_2"><rect x="10" y="126.4" width="924.8" height="36.2"/></clipPath>
+<clipPath id="cf_3"><rect x="10" y="161.4" width="924.8" height="7.2"/></clipPath>
+<clipPath id="cf_4"><rect x="10" y="167.4" width="924.8" height="5.2"/></clipPath>
+<clipPath id="cf_5"><rect x="10" y="171.4" width="924.8" height="13.2"/></clipPath>
+<clipPath id="cf_6"><rect x="10" y="183.4" width="924.8" height="8.2"/></clipPath>
+<clipPath id="cf_7"><rect x="10" y="190.4" width="924.8" height="7.2"/></clipPath>
+<clipPath id="cf_8"><rect x="10" y="196.4" width="924.8" height="4.2"/></clipPath>
+<clipPath id="cf_9"><rect x="10" y="199.4" width="924.8" height="28.799999999999994"/></clipPath>
+</defs>
+<use href="#wf" x="0" fill="currentColor" clip-path="url(#cf_0)"/>
+<use href="#wf" x="-3" fill="currentColor" clip-path="url(#cf_1)"/>
+<use href="#wf" x="0" fill="currentColor" clip-path="url(#cf_2)"/>
+<use href="#wf" x="5" fill="currentColor" clip-path="url(#cf_3)"/>
+<use href="#wf" x="0" fill="currentColor" clip-path="url(#cf_4)"/>
+<use href="#wf" x="5" fill="currentColor" clip-path="url(#cf_5)"/>
+<use href="#wf" x="0" fill="currentColor" clip-path="url(#cf_6)"/>
+<use href="#wf" x="-5" fill="currentColor" clip-path="url(#cf_7)"/>
+<use href="#wf" x="0" fill="currentColor" clip-path="url(#cf_8)"/>
+<use href="#wf" x="5" fill="currentColor" clip-path="url(#cf_9)"/>
+<rect x="155.5" y="153.8" width="22" height="2" fill="var(--sky)"/>
+<rect x="375.4" y="90.9" width="34" height="3" fill="var(--sky)"/>
+<rect x="466.5" y="116.8" width="34" height="3" fill="currentColor"/>
+<rect x="413.4" y="185.6" width="34" height="3" fill="var(--sky)"/>
+<rect x="276.1" y="159.0" width="22" height="3" fill="currentColor"/>
+<path d="M419.206 241.86800000000002V265.6H414.44599999999997V250.16400000000002L408.08799999999997 265.6H404.484L398.092 250.16400000000002V265.6H393.332V241.86800000000002H398.738L406.286 259.514L413.834 241.86800000000002ZM442.658 245.71000000000004V251.66000000000003H450.648V255.43400000000003H442.658V261.72400000000005H451.668V265.6H437.898V241.83400000000003H451.668V245.71000000000004ZM490.79400000000004 253.76800000000003Q490.79400000000004 257.338 489.24700000000007 260.00700000000006Q487.70000000000005 262.67600000000004 484.86100000000005 264.13800000000003Q482.02200000000005 265.6 478.28200000000004 265.6H469.98600000000005V241.86800000000002H478.28200000000004Q482.02200000000005 241.86800000000002 484.86100000000005 243.33000000000004Q487.70000000000005 244.79200000000003 489.24700000000007 247.49500000000003Q490.79400000000004 250.19800000000004 490.79400000000004 253.76800000000003ZM485.932 253.76800000000003Q485.932 250.062 483.89200000000005 247.971Q481.85200000000003 245.88000000000002 478.112 245.88000000000002H474.74600000000004V261.55400000000003H478.112Q481.85200000000003 261.55400000000003 483.89200000000005 259.514Q485.932 257.47400000000005 485.932 253.76800000000003ZM513.124 241.86800000000002V265.6H508.36400000000003V241.86800000000002ZM546.368 261.07800000000003H536.916L535.352 265.6H530.354L538.888 241.83400000000003H544.4300000000001L552.964 265.6H547.932ZM545.076 257.27000000000004 541.642 247.342 538.2080000000001 257.27000000000004Z" fill="currentColor"/>
+</svg></span>
+    <span>Video filming, editing and ads for restaurants, malls and boutiques.</span>
+    <span><em>Isaiah 26:3</em> · © 2026 Uredo Media</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var tc=document.getElementById('tc'),f=5*25+12;
+  function pad(n){return (n<10?'0':'')+n}
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    setInterval(function(){f++;var fr=f%25,s=Math.floor(f/25)%60,m=Math.floor(f/1500)%60;tc.textContent='00:'+pad(m)+':'+pad(s)+':'+pad(fr)},40);
+  }
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-copy');
+      function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)}
+      function fallback(){var el=b.parentNode.querySelector('.v');var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
+      try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
